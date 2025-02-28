@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>目录</title>
+  <style>
+    p{text-indent:10px;}
+    a{font-family:SimHei;font-size:20px;letter-spacing:1px;}
+  </style>
+</head>
+<body>
+<div align="center">
+<p><a href="../stos#s{{.storyId}}">小说一览</a></p></br>
+</div>
+<div align="right">
+<p><a href="../{{.storyId}}/ft/dl">下载全本</a></p></br>
+</div>
+<div align="left">
+<h2>{{.stNames}}</h2>
+{{range $value := .storyCat}}
+<p id="p{{$value.PageNo}}"><a href="cont?p={{$value.PageNo}}">{{$value.PageDesc}}</a></p>
+{{end}}
+</div>
+</body>
+</html>

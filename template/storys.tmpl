@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>小说一览</title>
+  <style>
+    p{text-indent:10px;}
+    a{font-family:SimHei;font-size:20px;letter-spacing:1px;}
+  </style>
+</head>
+<body>
+<div align="center">
+<h2>小说一览</h2>
+</div>
+<div align="left">
+{{range $value := .storys}}
+<p id="s{{$value.StoryId}}"><a href="{{$value.StoryId}}/cat">{{$value.StoryName}}</a></p>
+{{end}}
+</div>
+</body>
+</html>
