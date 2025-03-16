@@ -54,7 +54,7 @@ func getFullText(si *StoryInfo) *[]FullText {
 		},
 	})
 	if err != nil {
-		fmt.Println("数据库链接失败")
+		fmt.Println("database link failed")
 		return nil
 	}
 

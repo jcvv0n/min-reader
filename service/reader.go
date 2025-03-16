@@ -59,7 +59,7 @@ func getStroyContent(si *StoryInfo, page uint64) (*StoryContent, *PageInfo) {
 		},
 	})
 	if err != nil {
-		fmt.Println("数据库链接失败")
+		fmt.Println("database link failed")
 		return nil, nil
 	}
 

@@ -19,17 +19,17 @@
 </div>
 {{if gt .nextPage 0}}
 <div align="center">
-<a href="cont?p={{.nextPage}}">下一页</a>
-&nbsp&nbsp&nbsp&nbsp<a href="cat#p{{.curPage}}">目录</a>
-&nbsp&nbsp&nbsp&nbsp<a href="cont?p={{.nextPage}}">下一页</a>
+<a href="cont?p={{.nextPage}}">Next</a>
+&nbsp&nbsp&nbsp&nbsp<a href="cat#p{{.curPage}}">Cat</a>
+&nbsp&nbsp&nbsp&nbsp<a href="cont?p={{.nextPage}}">Next</a>
 </div>
 </br></br>
 {{end}}
 {{if gt .prePage 0}}
 <div align="center">
-<a href="cont?p={{.prePage}}">上一页</a>
-&nbsp&nbsp&nbsp&nbsp<a href="cat#p{{.curPage}}">目录</a>
-&nbsp&nbsp&nbsp&nbsp<a href="cont?p={{.prePage}}">上一页</a>
+<a href="cont?p={{.prePage}}">Prev</a>
+&nbsp&nbsp&nbsp&nbsp<a href="cat#p{{.curPage}}">Cat</a>
+&nbsp&nbsp&nbsp&nbsp<a href="cont?p={{.prePage}}">Prev</a>
 </div>
 </br></br>
 {{end}}

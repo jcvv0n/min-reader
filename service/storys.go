@@ -38,7 +38,7 @@ func GetStoryInfo(namespace string, storyId uint64) *StoryInfo {
 		},
 	})
 	if err != nil {
-		fmt.Println("数据库链接失败")
+		fmt.Println("database link failed")
 		return nil
 	}
 	var si StoryInfo
@@ -56,7 +56,7 @@ func getStroyList(namespace *string) *[]StoryOverview {
 		},
 	})
 	if err != nil {
-		fmt.Println("数据库链接失败")
+		fmt.Println("database link failed")
 		return nil
 	}
 
